@@ -57,6 +57,7 @@ bundle exec rails s
 * add `apache2-utils` package
 * configure redis
 * configure nginx
+* set ~/.irbrc and ~/.irb_history
 
 ## Notes
 
