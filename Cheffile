@@ -10,6 +10,6 @@ cookbook 'nginx'
 cookbook 'openssl'
 cookbook 'package_installer'
 cookbook 'postgresql'
-cookbook 'redis'
+cookbook 'redis', '~> 3.0.4'
 cookbook 'rvm', git: 'https://github.com/fnichol/chef-rvm.git'
 
