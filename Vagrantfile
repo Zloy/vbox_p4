@@ -15,6 +15,7 @@ Vagrant.configure("2") do |config|
       config.vm.network "forwarded_port", guest: 3000, host: 3000
       config.vm.network "forwarded_port", guest: 3001, host: 3001
       config.vm.network "forwarded_port", guest: 3002, host: 3002
+      config.vm.network "forwarded_port", guest: 3003, host: 3003
       
       config.vm.provider "virtualbox" do |vb|
         vb.gui = false
@@ -24,7 +25,7 @@ Vagrant.configure("2") do |config|
         vb.customize ["modifyvm", :id, "--memory", "1024"]
       end
 
-      config.vm.synced_folder "../", "/home/vagrant/my_src"
+      config.vm.synced_folder "../..", "/home/vagrant/my_src"
       config.ssh.forward_agent = true # to use host keys added to agent
 
       # provisioning
