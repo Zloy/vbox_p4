@@ -18,7 +18,6 @@ config/secrets.yml
 Session.vim
 *.backup
 .vagrant
-cookbooks/*
 packages/*.rpm
 packages/*.deb
 packages/*.zip
