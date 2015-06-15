@@ -21,6 +21,7 @@ Session.vim
 packages/*.rpm
 packages/*.deb
 packages/*.zip
+tags
 
 ## Environment normalisation:
 /.bundle
