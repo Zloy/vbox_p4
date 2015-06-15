@@ -8,8 +8,8 @@ It installs nginx, redis, postgresql and configures them.
 
 It expects RAILS application to be in ```../``` folder
 
-It doesn't require any configuration to start RAILS application, 
-except of gem installation and database preparation. 
+It doesn't require any configuration to start RAILS application,
+except of gem installation and database preparation.
 
 ## Prerequisites
 
@@ -24,7 +24,7 @@ These packages should be installed on Host machine
 
 ### Setup DB user an password
 
-Check out application DB user and its password in `vbox/roles/db-master.json`, and set them in `RAILS_ROOT/config/database.yml`, or change them in `vbox/roles/db-master.json` 
+Check out application DB user and its password in `vbox/roles/db-master.json`, and set them in `RAILS_ROOT/config/database.yml`, or change them in `vbox/roles/db-master.json`
 
 ### Create a box
 
@@ -39,6 +39,15 @@ librarian-chef install
 vagrant up
 vagrant ssh
 ```
+
+### Provision a remote staging host
+
+If you need to provision e.g. **Digital Ocean** droplet
+
+1. add ssh parameters for it with the name p4-ocean to ~/.ssh/config
+2. check you can login there with `ssh p4-ocean`
+3. run the script `./deploy.sh p4-ocean nodes/staging.json`
+4. take a cup of coffee as it takes a while
 
 ### Setup the application
 

@@ -4,20 +4,11 @@
   "chef_type": "environment",
   "json_class": "Chef::Environment",
   "default_attributes": {
-    "rvm": {
-      "installer_url": "https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer",
-      "branch": "none",
-      "version": "1.25.28",
-      "rvmrc": {
-        "rvm_gemset_create_on_use_flag": 1
-      },
-      "user_installs": [{        
-        "user": "vagrant",
-        "default_ruby": "ruby-2.0.0-p353@global"
-      }]
-    },
     "package_installer": {
       "packages": {
+        "postgresql-9.3": null,
+        "postgresql-client-9.3": null,
+        "postgresql-server-dev-9.3": null,
         "openssl": null,
         "htop": null,
         "libcurl4-openssl-dev": null,

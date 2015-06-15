@@ -4,7 +4,6 @@
   "chef_type": "role",
   "json_class": "Chef::Role",
   "run_list": [
-    "recipe[rvm::user]",
     "recipe[package_installer]"
   ]
 }
