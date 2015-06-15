@@ -1,9 +1,10 @@
-maintainer       "Zhan Tuaev"
-maintainer_email "zmtuaev@dasreda.ru"
-license          "MIT"
-description      "Creates PostgreSql user for rails"
+name 'postgresql_setup'
+maintainer 'Zloy'
+maintainer_email 'zhoran@inbox.ru'
+license 'MIT'
+description 'Creates PostgreSql user for rails'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
-version          "0.0.1"
+version '0.0.1'
 
 recipe 'user',   'Creates a user'
 
