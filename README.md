@@ -67,6 +67,12 @@ bundle exec rails s
 * configure redis
 * configure nginx
 * set ~/.irbrc and ~/.irb_history
+* setup LC_ALL, LANG (put into /etc/environment)
+
+```
+LC_ALL=en_US.UTF-8
+LANG=en_US.UTF-8
+```
 
 ## Notes
 
