@@ -16,11 +16,12 @@ Vagrant.configure("2") do |config|
       config.vm.network "forwarded_port", guest: 3001, host: 3001
       config.vm.network "forwarded_port", guest: 3002, host: 3002
       config.vm.network "forwarded_port", guest: 3003, host: 3003
-      
+      config.vm.network "forwarded_port", guest: 6379, host: 6379 # Redis
+
       config.vm.provider "virtualbox" do |vb|
         vb.gui = false
         vb.name = "p4"
-      
+
         # Use VBoxManage to customize the VM. For example to change memory:
         vb.customize ["modifyvm", :id, "--memory", "1024"]
       end
