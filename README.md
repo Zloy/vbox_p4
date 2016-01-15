@@ -63,6 +63,7 @@ bundle exec rails s
 
 ## TODO
 
+* add `rabbitmq-server` package and message broker role
 * add `apache2-utils` package
 * configure redis
 * configure nginx
